@@ -1,0 +1,21 @@
+
+<mat-toolbar>
+
+    <h1 (click)="getfiredata()">GetFit</h1>
+</mat-toolbar>
+
+<table  style="width:100%">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>tech</th>
+      <th>Active</th>
+    </tr>
+    <tr *ngFor="let value of list">
+      <td >{{value.id}}</td>
+      <td>{{value.name}}</td>
+      <td>{{value.tech}}</td>
+      <td>{{value.sub}}</td>
+    </tr>
+    
+  </table>
